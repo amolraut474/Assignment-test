@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architecture Home Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="section-header">
+        <header>
+            <div class="container">
+                <div class="logo">Logo</div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars open-menu"></i>
+                        <i class="fas fa-times close-menu"></i>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <!-- Hero Section -->
+
+
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Register Now and<br>
+                    Get a 50% Discount</h1>
+                <p class="Description-text">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+                </p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h3 class="service-m-head">Our Services</h3>
+        <h4 class="service-head ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est praesentium modi
+            veritatis tenetur quaerat?</h4>
+        <div class="container">
+            <div class="service">
+                <i class="fas fa-building"></i>
+                <h3>Corporate Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi consequatur ut, quos
+                    quisquam nostrum ratione necessitatibus.</p>
+                <a class="feature-btn" href="#">
+                    Read More </a>
+            </div>
+            <div class="service">
+                <i class="fas fa-tools"></i>
+                <h3>
+                    Commercial Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi consequatur ut, quos
+                    quisquam nostrum ratione necessitatibus.</p>
+                <a class="feature-btn" href="#">
+                    Read More </a>
+            </div>
+            <div class="service">
+                <i class="fas fa-paint-roller"></i>
+                <h3>Residential Design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sequi consequatur ut, quos
+                    quisquam nostrum ratione necessitatibus.</p>
+                <a class="feature-btn" href="#">
+                    Read More </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer-section">
+        <footer>
+            <div class="footer-content">
+                <div class="contact-i">
+                    <div class="logo">
+                        <h2 class="logo">Logo</h2>
+                    </div>
+                    <div class="contact-info">
+                        <p>Contact us: (123) 456-7890</p>
+                        <p>Address:123 Main Street,US</p>
+                        <p>Email: info@example.com</p>
+                    </div>
+
+                    <div class="social-media">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script>document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+            const openMenuIcon = document.querySelector('.open-menu');
+            const closeMenuIcon = document.querySelector('.close-menu');
+
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                openMenuIcon.classList.toggle('hidden');
+                closeMenuIcon.classList.toggle('hidden');
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

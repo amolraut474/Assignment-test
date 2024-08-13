@@ -1,0 +1,158 @@
+/* Responsive Design */
+
+@media (max-width: 1440px) {
+    .hero {
+        margin: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 1000;
+        background-color: #252531;
+        padding: 15px 30px;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle .open-menu {
+        display: block;
+    }
+
+    .menu-toggle .close-menu {
+        display: none;
+    }
+
+    nav ul.active~.menu-toggle .open-menu {
+        display: none;
+    }
+
+    nav ul.active~.menu-toggle .close-menu {
+        display: block;
+    }
+
+    .services .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+    }
+
+    .hero {
+        margin: 0px;
+        height: 350px;
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+        width: 80%;
+        margin: 20px auto;
+
+    }
+
+    .Description-text {
+        width: 100%;
+    }
+
+    .service-head {
+        width: 80%;
+    }
+
+    .service:nth-child(3) {
+        display: none;
+    }
+
+    .services .container {
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+
+    header {
+        padding: 15px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 13px;
+        padding: 12px 20px;
+    }
+
+    .hero {
+        margin: 0px;
+        height: 350px;
+    }
+
+    .service {
+        width: 100%;
+        padding: 50px 30px 50px 30px;
+        align-items: center;
+        text-align: center;
+    }
+    .service:nth-child(3) {
+        display: block !important;
+    }
+    .services .container {
+        gap: 25px;
+        flex-direction: column;
+    }
+
+    .Description-text {
+        width: 100%;
+    }
+
+    .service-head {
+        width: 80%;
+    }
+
+}
